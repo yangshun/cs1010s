@@ -1,6 +1,6 @@
 h1 { border-bottom: 1px dotted #ccc; margin-bottom: 30px; }
 h4 { padding-top:30px; margin-bottom:10px; color: #09c; font-size: 28px;}
-pre {font-family: 'courier', sans-serif;}
+pre {font-family: 'courier', sans-serif; background-color:#eee; padding:20px;margin:20px;margin-left: 0px;border-radius: 10px;}
 img {margin-top: 30px; margin-bottom: 30px;}
 img.inline {float: right; padding-left: 20px;}
 ul.block {background-color: #F5F7DC; padding: 20px; width: 300px; border-radius: 10px;}
