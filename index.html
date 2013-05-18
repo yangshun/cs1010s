@@ -484,27 +484,100 @@ i love banana
         </div>
         <div data-target="yang-shun">
           <h2>Yang Shun</h2>
-          <h4>Scenario 1</h4>
-          <p><strong>Context:</strong>
+          <h4>EdgeRank Algorithm</h4>
+          <p>
+            <strong>Context: </strong>
+            Almost everybody uses Facebook everyday. This question will give students deeper insights on how their Facebook's newsfeed is populated based on their Facebook action history.
           </p>
-          <p><strong>Description:</strong>
+          <p>
+            <strong>Description:</strong>
+            Students will be tasked to implement a simplified version of <a href="http://edgerank.net/" target="_blank">Facebook's EdgeRank algorithm</a> which decides which stories appear in their newsfeed. 
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>
+            The three ingredients of the EdgeRank algorithm:
+            <ol>
+              <li>Affinity Score (Activities and the people involved)</li>
+              <li>Edge Weight (Type of activities)</li>
+              <li>Time Decay (The older the activity, the lower the score)</li>
+            </ol>
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          <p>
+            Data for user activities (users involved, type of activity, time of activity) will be provided. 
+            Based on all these data, the EdgeRank score for each activity can be computed.
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            Given data of users and their social activities, determine the top-ranked activities that will be displayed for the particular user's newsfeed.
           </p>
-          <h4>Scenario 2</h4>
-          <p><strong>Context:</strong>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Understand the basics of the core algorithms that power major technology startups like Facebook.
           </p>
-          <p><strong>Description:</strong>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Algorithms, Data structures.
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>
+            <strong>Algorithms involved (if any): </strong>
+            Simplified version of EdgeRank Algorithm.
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          <h4>Information Extraction</h4>
+          <p>
+            <strong>Context: </strong>
+            Machine learning in the information parsing context.
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            <strong>Description: </strong>
+            <a href="http://www.apple.com/ios/siri/" target="_blank">Siri</a>, the intelligent personal assistant for Apple's iOS is able to in a user's instructions, understand them and execute useful tasks for the user. Siri uses Natural Language Processing (NLP), an increasingly important branch of Computer Science to derive meaning out of a human's natural language input.
+          </p>
+          <p>
+            <img src="http://images.apple.com/ios/siri/images/everyday_restaurants.jpg"/ class="inline">
+            We will study one aspect of NLP, information extraction which is concerned about the extraction of semantic information from text. One common use-case is the scheduling of appointments and an instruction to do so can be: "Schedule a review meeting at Peter's office at 12.30pm tomorrow". Upon receiving this instruction, Siri has to identify the entities involved in this instruction:
+            <ul class="block">
+              <li><strong>Occasion: </strong>Review meeting</li>
+              <li><strong>Time: </strong>12.30pm</li>
+              <li><strong>Date: </strong>Tomorrow</li>
+              <li><strong>Location: </strong>Peter's office</li>
+            </ul>
+          </p>
+          <p>
+            Other possible instructions:
+            <ul>
+              <li><em>"On 5th June, I have an examination for CS1010S at MPSH1 at 9:00am"</em></li>
+              <li><em>"Schedule a conference call with Phil tomorrow at 3PM"</em></li>
+            </ul>
+            Given a line of instructions, students can write algorithms to match the instructions with pre-defined patterns and aim to identify the entities involved accurately.
+          </p>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Pattern discovery and matching
+          </p>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Natural language processing, Machine learning (information extraction)
+          </p>
+          <h4>Matchmaking Platforms</h4>
+          <p>
+            <strong>Context: </strong>
+            Introduction to algorithms used in matchmaking platforms. (Not restricted to dating platforms.)
+          </p>
+          <p>
+            <strong>Description: </strong>
+            Dating websites like eHarmony and OkCupid suggest matches based on users' psychological compatibility, interpersonal chemistry and physical attraction (<a href="http://www.quora.com/How-complex-are-the-algorithms-that-dating-websites-like-eHarmony-use-to-match-people" target="_blank">Quora reference</a>).
+          </p>
+          <p>
+            Complex models utilizing various dimensions are built in generating a match percentage between users. OkCupid has <a href="http://www.okcupid.com/help/match-percentages" target="_blank">an interesting way</a> of calculating Match Percentages which involves a user's response to questions being asked to potential dates and how important the question is to them.
+          </p>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Students can learn how these matchmaking platforms function and write their own matchmaking algorithms.
+          </p>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Graph theory
+          </p>
+          <p>
+            <strong>Algorithms involved (if any): </strong>
+            Some best-match algorithm?
           </p>
           <hr/>
         </div>
