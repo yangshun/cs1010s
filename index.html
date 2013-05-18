@@ -125,7 +125,7 @@
             Path-finding.
           </p>
           <h4>Jokes and Solar System</h4>
-          <img src="http://imgs.xkcd.com/comics/interstellar_memes.png" width="500"/>
+          <img src="http://imgs.xkcd.com/comics/interstellar_memes.png" width="100%"/>
           <p>
             <strong>Context: </strong>
             If we were on some planet in the universe, what would be receiving from Earth.
@@ -222,27 +222,49 @@
         </div>
         <div data-target="eldric">
           <h2>Eldric</h2>
-          <h4>Scenario 1</h4>
-          <p><strong>Context:</strong>
+          <h4>Potential Learning</h4>
+          <p>
+            <strong>Context: </strong>
+            NUS CAP system
           </p>
-          <p><strong>Description:</strong>
+          <p>
+            <strong>Description: </strong>
+            Given that certain modules have a certain grade distribution, given that you take it, select set of modules (with total MC = some amount) such that you maximize utility while keeping probability of getting a certain minimum CAP. We simply define modules to have a fixed utility and a certain grade distribution. Additionally we may define compulsory modules the student must take. Also, there may not be a solution.
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Probabilistic thinking, optimization
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Programming methodology, problem modeling.
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            <strong>Algorithms involved (if any): </strong>
+            1 method of solving this problem would be instead of keeping track of GPA, we keep track of total points achieved by each module, this can be easily written as a probability distribution by “adding” the various components up. I believe at this point a greedy algorithm could be thought of.
           </p>
-          <h4>Scenario 2</h4>
-          <p><strong>Context:</strong>
+          <h4>Moral Computing</h4>
+          <p>
+            <strong>Context: </strong>
+            Understanding demographics
           </p>
-          <p><strong>Description:</strong>
+          <p>
+            <strong>Description: </strong>
+            Based off this <a href="http://www.washingtonpost.com/opinions/our-unrealistic-views-of-death-through-a-doctors-eyes/2012/01/31/gIQAeaHpJR_story.html" target="_blank">article</a>.
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>Not entirely sure if available, but may be able to get a mine of census data somewhere.</p>
+          <p>In the article, it is claimed that life expectancy increased greatly because of reduced infant mortality and mortality as a result of birth complications. Compute “conditional life expectancy” to identify where medical technology contributes to increased life expectancy.</p>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Understanding statistics
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Programming methodology, filtering data.
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            <strong>Algorithms involved (if any): </strong>
+            A few map/filter/accumulate functions should do the job.
           </p>
           <hr/>
         </div>
@@ -284,7 +306,7 @@
             <strong>Relevant CS topics/focus: </strong>
             Data structures.
           </p>
-            <h4>Scenario 2</h4>
+            <h4>Agent-based Modeling</h4>
           <p>
             <strong>Context: </strong>
             (idea shamelessly taken from <a href="http://allendowney.blogspot.sg/2012/01/think-complexity.html" target="_blank">here</a>.)
@@ -308,27 +330,44 @@
         </div>
         <div data-target="tang-xiao">
           <h2>Tang Xiao</h2>
-          <h4>Scenario 1</h4>
-          <p><strong>Context:</strong>
+          <h4>First Class Problems</h4>
+          <p>
+            <strong>Context: </strong>
+            Using programming to generate possible graduation paths and module combinations.
           </p>
-          <p><strong>Description:</strong>
+          <p>
+            <strong>Description: </strong>
+            Many of us probably want to graduate with a first class honour degree, which the criteria is with CAP >= 4.5 and at least A- in Honours thesis. We want to know what are all the possible grade combinations that will satisfy the first class honour degree criteria. Also consider that there are 3 SU options, one's MC can vary from 160 to 180, and FYP is 12 MC. 
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>Naive solution will be enumerate all possibilities then remove inapporpriate ones. Better solution is to construct the problem to be a constraint satisfaction problem then use searching algorithm.
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Programming as a tool to do the brute force work for people.
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Constraint satisfation <br/>
+            Searching
           </p>
-          <h4>Scenario 2</h4>
-          <p><strong>Context:</strong>
+          
+          <h4>One-Child Policy</h4>
+          <p>
+            <strong>Context: </strong>
+            Using programming to perform mathematical modeling and simulation.
           </p>
-          <p><strong>Description:</strong>
+          <p>
+            <strong>Description: </strong>
+             With the one child policy, how long it will take for the most populated country to become the least ? Assume half the current population of China(1.4 billion) are unmarried and able to have children. The ratio among unmarried of male to female is 121:100. When a couple get married, they will have child and it will be either a girl or a boy. If it's a girl, there is 0.01 chance that the couple will have a second baby. It takes 30 years for the new generation to grow up and get married. (other conditions can added to make it more complicated)
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Understand how programming can be used in mathematical contexts.
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
-          </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            <strong>Relevant CS topics/focus:</strong>
+            Iteration<br/>
+            Recursion
           </p>
           <hr/>
         </div>
@@ -510,53 +549,132 @@ i love banana
         </div>
         <div data-target="yang-shun">
           <h2>Yang Shun</h2>
-          <h4>Scenario 1</h4>
-          <p><strong>Context:</strong>
+          <h4>EdgeRank Algorithm</h4>
+          <p>
+            <strong>Context: </strong>
+            Almost everybody uses Facebook everyday. This question will give students deeper insights on how their Facebook's newsfeed is populated based on their Facebook action history.
           </p>
-          <p><strong>Description:</strong>
+          <p>
+            <strong>Description:</strong>
+            Students will be tasked to implement a simplified version of <a href="http://edgerank.net/" target="_blank">Facebook's EdgeRank algorithm</a> which decides which stories appear in their newsfeed. 
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>
+            The three ingredients of the EdgeRank algorithm:
+            <ol>
+              <li>Affinity Score (Activities and the people involved)</li>
+              <li>Edge Weight (Type of activities)</li>
+              <li>Time Decay (The older the activity, the lower the score)</li>
+            </ol>
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          <p>
+            Data for user activities (users involved, type of activity, time of activity) will be provided. 
+            Based on all these data, the EdgeRank score for each activity can be computed.
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            Given data of users and their social activities, determine the top-ranked activities that will be displayed for the particular user's newsfeed.
           </p>
-          <h4>Scenario 2</h4>
-          <p><strong>Context:</strong>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Understand the basics of the core algorithms that power major technology startups like Facebook.
           </p>
-          <p><strong>Description:</strong>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Algorithms, Data structures.
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>
+            <strong>Algorithms involved (if any): </strong>
+            Simplified version of EdgeRank Algorithm.
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          <h4>Information Extraction</h4>
+          <p>
+            <strong>Context: </strong>
+            Machine learning in the information parsing context.
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            <strong>Description: </strong>
+            <a href="http://www.apple.com/ios/siri/" target="_blank">Siri</a>, the intelligent personal assistant for Apple's iOS is able to in a user's instructions, understand them and execute useful tasks for the user. Siri uses Natural Language Processing (NLP), an increasingly important branch of Computer Science to derive meaning out of a human's natural language input.
+          </p>
+          <p>
+            <img src="http://images.apple.com/ios/siri/images/everyday_restaurants.jpg"/ class="inline">
+            We will study one aspect of NLP, information extraction which is concerned about the extraction of semantic information from text. One common use-case is the scheduling of appointments and an instruction to do so can be: "Schedule a review meeting at Peter's office at 12.30pm tomorrow". Upon receiving this instruction, Siri has to identify the entities involved in this instruction:
+            <ul class="block">
+              <li><strong>Occasion: </strong>Review meeting</li>
+              <li><strong>Time: </strong>12.30pm</li>
+              <li><strong>Date: </strong>Tomorrow</li>
+              <li><strong>Location: </strong>Peter's office</li>
+            </ul>
+          </p>
+          <p>
+            Other possible instructions:
+            <ul>
+              <li><em>"On 5th June, I have an examination for CS1010S at MPSH1 at 9:00am"</em></li>
+              <li><em>"Schedule a conference call with Phil tomorrow at 3PM"</em></li>
+            </ul>
+            Given a line of instructions, students can write algorithms to match the instructions with pre-defined patterns and aim to identify the entities involved accurately.
+          </p>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Pattern discovery and matching
+          </p>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Natural language processing, Machine learning (information extraction)
+          </p>
+          <h4>Matchmaking Platforms</h4>
+          <p>
+            <strong>Context: </strong>
+            Introduction to algorithms used in matchmaking platforms. (Not restricted to dating platforms.)
+          </p>
+          <p>
+            <strong>Description: </strong>
+            Dating websites like eHarmony and OkCupid suggest matches based on users' psychological compatibility, interpersonal chemistry and physical attraction (<a href="http://www.quora.com/How-complex-are-the-algorithms-that-dating-websites-like-eHarmony-use-to-match-people" target="_blank">Quora reference</a>).
+          </p>
+          <p>
+            Complex models utilizing various dimensions are built in generating a match percentage between users. OkCupid has <a href="http://www.okcupid.com/help/match-percentages" target="_blank">an interesting way</a> of calculating Match Percentages which involves a user's response to questions being asked to potential dates and how important the question is to them.
+          </p>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Students can learn how these matchmaking platforms function and write their own matchmaking algorithms.
+          </p>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Graph theory
+          </p>
+          <p>
+            <strong>Algorithms involved (if any): </strong>
+            Some best-match algorithm?
+          </p>
+          <h4>Tekong Warfare</h4>
+          <p>
+            <strong>Context: </strong>
+            Using a 2-dimensional grid as a battlefield, come up with an optimal strategy destroy all enemies using the least amount of land mines.
+          </p>
+          <p>
+            <strong>Description: </strong>
+            Soldiers from the Ninja company of Basic Military Training Centre (BMTC) are supposed to carry out their field-camp training. However, the training site is full of wild boars! The wild boars patrol along a linear fixed path. They decide to dig holes in strategic locations such that the boars will fall into them when treading over them. The Ninja soldiers have limited resources and manpower, they must find the optimal location(s) to dig holes that are in the patrolling path of all the boars and at the same time, minimize the number of holes that have to be dug.
+          </p>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Optimization.
+          </p>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Multi-dimensional arrays.
           </p>
           <hr/>
         </div>
         <div data-target="yee-sian">
           <h2>Yee Sian</h2>
-          <h4>Scenario 1</h4>
-          <p><strong>Context:</strong>
+          <h4>The MRT Problem</h4>
+          <p>
+            Full details <a href="http://nbviewer.ipython.org/5c4cb3638cad055092c3" target="_blank">here</a>.<br/>
+            Original code <a href="https://gist.github.com/yeesian/5c4cb3638cad055092c3" target="_blank">here</a>.
           </p>
-          <p><strong>Description:</strong>
-          </p>
-          <p><strong>Learning Objectives:</strong>
-          </p>
-          <p><strong>Relevant CS topics/focus:</strong>
-          </p>
-          <p><strong>Algorithms involved (if any):</strong>
-          </p>
-          <h4>Scenario 2</h4>
-          <p><strong>Context:</strong>
-          </p>
-          <p><strong>Description:</strong>
-          </p>
-          <p><strong>Learning Objectives:</strong>
-          </p>
-          <p><strong>Relevant CS topics/focus:</strong>
-          </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <h4>Shortest [MRT] Path</h4>
+          <p>
+            Full details <a href="http://nbviewer.ipython.org/0d7ec083cd550af51605" target="_blank">here</a>.<br/>
+            Original code <a href="https://gist.github.com/yeesian/0d7ec083cd550af51605" target="_blank">here</a>.
+            <img src="http://singaporerealestatearena.com/wp-content/uploads/2012/03/Singapore_MRT__LRT_Network_2012.png" width="100%"/>
           </p>
           <hr/>
         </div>
