@@ -139,7 +139,7 @@
           <p>Could reverse the situation and identify major points in history and see which star systems would be receiving them now.</p>
           <p>
             <strong>Learning Objectives: </strong>
-            <ul>
+            <ul class="bullet">
               <li>Calculation with programming</li>
               <li>Filtering</li>
               <li>Sorting</li>
@@ -449,7 +449,7 @@ i love banana
           </p>
           <p>
             <strong>Learning Objectives: </strong>
-            <ul>
+            <ul class="bullet">
               <li>Iteration</li>
               <li>Handling edge cases</li>
             </ul>
@@ -473,7 +473,7 @@ i love banana
           </p>
           <p>
             <strong>Learning Objectives: </strong>
-            <ul>
+            <ul class="bullet">
               <li>Represent data as graphs</li>
               <li>Doing searches on graphs</li>
             </ul>
@@ -491,17 +491,17 @@ i love banana
           <p>
             <strong>Description: </strong>
             Given:
-            <ol>
+            <ul class="bullet">
               <li>a list of locations</li>
               <li>all train/bus routes</li>
               <li>arrival time of the train/bus at each location</li>
               <li>starting location and ending location</li>
               <li>latest time to reach end location</li>
-            </ol>
+            </ul>
           </p>
           <p>We want to be able to determine the best possible route to arrive at the ending location.</p>
           <p>The best possible routes can be defined by:
-            <ul>
+            <ul class="bullet">
               <li>Cost of the route</li>
               <li>Least number of transfers</li>
               <li>Latest possible time to leave starting location</li>
@@ -509,7 +509,7 @@ i love banana
           </p>
           <p>
             <strong>Learning Objectives: </strong>
-            <ul>
+            <ul class="bullet">
               <li>OOP: organising the data in the nodes</li>
               <li>Graph as a way to solve problem</li>
             </ul>
@@ -523,27 +523,90 @@ i love banana
         </div>
         <div data-target="xiangxin">
           <h2>Xiangxin</h2>
-          <h4>Scenario 1</h4>
-          <p><strong>Context:</strong>
+          <h4>The Ten Commandments</h4>
+          <p>
+            <strong>Context: </strong>
+            The story happened when the Hebrews were slaves in Egypt and Moses was born. Pharaoh wanted all Hebrew baby boys be killed because he was afraid of them taking over his country when they grow up. To save Moses, his mother hid him in a basket by the side of the River Nile. Pharaoh's daughter found Moses in his basket when she came to the river to wash. She took him back to live with her as though he were her son. Later when Moses grew up, he saved helped the Hebrews escape from pharaoh’s torture.
           </p>
-          <p><strong>Description:</strong>
+
+          <p>Moses grew up as an Egyptian prince, but he never forgot he was a Hebrew. One day Moses lost his temper and killed an Egyptian who had beaten a Hebrew slave to death. He had to run away to another land. God spoke to him from a burning bush and told him he must go back and free the Hebrews from slavery.</p>
+
+          <p>Moses went to Pharaoh to ask him to set the Hebrews free. Pharaoh did not want to lose his slaves. Then ten plagues happened in Egypt. Before each one, Moses had warned Pharaoh what would happen. The disasters had been sent by God. The last plague was the worst. The eldest son in every Egyptian family, including Pharaoh's, died. God had warned Moses to mark the doorposts of all Hebrew houses so that Hebrew boys would be safe.</p>
+
+          <p>Pharaoh was so upset by losing his son that he said the Hebrews could leave Egypt. The Hebrews knew they must leave Egypt quickly. They needed food to take with them. There was no time to let the bread rise before it was cooked. They had to take the dough as it was. Pharaoh changed his mind again and sent his army after them to bring them back.</p>
+
+          <p>The army chased the Hebrews to the banks of the Red Sea. They would have been trapped but a miracle happened. God told Moses to lift up his rod and as he did so the waters parted to make a dry path. They were able to make their escape. When all the Hebrew were safely at the other shore, Moses lifted up his rod again and the waters of the sea closed on Pharaoh's army who had been chasing them.</p>
+
+          <p>After being set free, they walked in the desert, seeking for the Promised Land Canaan. The journey was long and they soon ran out of food. They were very hungry and blamed Moses for taking them out of Egypt.</p>
+
+          <p>God told Moses, "I will give the people food." The next day the ground was covered with a white food that tasted like honey (Moses called this food manna). God also sent flocks of birds called quails that they cooked and ate. When their water ran out, God told Moses to strike a rock with his rod. As he did so water rushed out and they all had enough to drink.</p>
+
+          <p>After three months of travelling the Hebrews came to the foot of Mount Sinai. God called Moses to meet him on the mountain. As he climbed there was thunder and lightning. When he was up the mountain he was given ten laws that told the people how to live.</p>
+
+          <p>These Ten Commandments were written on two tablets of stone. Moses stayed so long on the mountain that the people waiting at the foot of the mountain grew angry. They decided to make another God for themselves - a golden calf. When Moses returned he was shocked to see the people worshipping the golden calf. He broke the tablets God had given him and destroyed the golden calf. God forgave his people for worshipping the statue and told Moses to cut two more tablets of stone.</p>
+
+          <p>Moses took the stone tablets up the mountain and God gave him the Ten Commandments again. When he came down all the people listened to Moses as he told them what God had said. Moses promised God that the Hebrews would keep all of the Commandments.</p>
+        
+          <h4>Airport Gates</h4>
+          <p>
+            <strong>Context: </strong>
+            Gate assignment problem in an airport.
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>
+            <strong>Description: </strong>
+            After an aircraft has landed until the time when it departs again, the airport needs to take care of it by assigning a gate to it. Some work needs to be done during this time. For example, refueling the aircraft, unloading passengers, cleaning, providing new supplies and boarding new passengers. Given the schedules of all aircrafts and a set of gates, how can an airport robustly pair them without failing to meet a set of criteria?
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          
+            The criteria may include:</p>
+          <ul class="bullet">
+            <li>One gate can only serve one aircraft at a time.</li>
+            <li>Two adjacent gates cannot serve large aircraft at the same time.</li>
+            <li>Some gates can only server certain types of aircraft.</li>
+            <li>Two adjacent gates cannot server aircrafts with same departure time.</li>
+          </ul>
+          
+          <p>Also, a flight (aircraft) may have various properties:</p>
+          <ul class="bullet">
+            <li>Departure time</li>
+            <li>Departure airport</li>
+            <li>Arriving time</li>
+            <li>Destination airport</li>
+            <li>Type</li>
+            <li>Size</li>
+          </ul>
+
+          <p>Same for a gate:</p>
+          <ul class="bullet">
+            <li>Types of flights it can handle</li>
+            <li>Type</li>
+            <li>Number, location etc.</li>
+          </ul>
+          <p>
+            To achieve robustness, the goal is to maximize the idle time between all pairs of consecutive flights at a gate, ensuring that each flight can arrive either a bit too early or a bit too late without the need for re-planning the schedule. For example, a better solution to the following schedule is to move Flight 3 to Gate 2 and Flight 4 to Gate 1.
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <img src="img/airport-gates.png" width="600" />
+          <p>
+            A detailed problem formulation and solution used in Amsterdam Airport Schiphol (AAS) can be found <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.cs.uu.nl%2Fdocs%2Fvakken%2Fstt%2FChapter-gates.pdf&sa=D&sntz=1&usg=AFQjCNG32i3JvqUvJLJ69XmPJRdtPdnZyw" target="_blank">here</a>.
           </p>
-          <h4>Scenario 2</h4>
-          <p><strong>Context:</strong>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Optimizing within constraints
           </p>
-          <p><strong>Description:</strong>
+
+          <h4>Taxi Dispatch</h4>
+          <p>
+            <strong>Context: </strong>
+            Transportation dispatching systems.
           </p>
-          <p><strong>Learning Objectives:</strong>
+          <p>
+            <strong>Description: </strong>
+            A similar scenario is taxi ordering and dispatching system. Based on the current taxi dispatch system in Singapore, there’re two categories of booking: current and advanced. Current bookings are requests for a taxi to reach a customer immediately or within 30mins. Currently it’s handled based on nearest-location method. A geographically nearest taxi is assigned to pick up the customer. Advanced bookings must be made over half an hour ago. Then the message is spread through out all taxis, both empty and occupied. The job is assigned to the taxi driver who first bid for it.
           </p>
-          <p><strong>Relevant CS topics/focus:</strong>
+          <p>
+            However, the way of handling current bookings is not always efficient. The taxis must take into account the current traffic condition. Therefore, the one with the shortest-time path should be selected. (Involves SSSP algorithm which may be a hard for freshmen.)
           </p>
-          <p><strong>Algorithms involved (if any):</strong>
+          <p>
+            To optimize advanced bookings handling, a taxi with a sequence of advanced booking pickup tasks should minimize the total travel cost, without violating precedence, capacity and time windows constraints (maximum amount of time to reach a customer). The problem can be modeled into Pickup and Delivery Problem with Time Window (PDPTW). The idea is to chain several bookings with pick-up time points spread over a reasonable period of time and to let each pick-up point coincide with or be closed to the previous drop-off location. 
           </p>
           <hr/>
         </div>
@@ -560,7 +623,7 @@ i love banana
           </p>
           <p>
             The three ingredients of the EdgeRank algorithm:
-            <ol>
+            <ol class="bullet">
               <li>Affinity Score (Activities and the people involved)</li>
               <li>Edge Weight (Type of activities)</li>
               <li>Time Decay (The older the activity, the lower the score)</li>
@@ -606,7 +669,7 @@ i love banana
           </p>
           <p>
             Other possible instructions:
-            <ul>
+            <ul class="bullet">
               <li><em>"On 5th June, I have an examination for CS1010S at MPSH1 at 9:00am"</em></li>
               <li><em>"Schedule a conference call with Phil tomorrow at 3PM"</em></li>
             </ul>
