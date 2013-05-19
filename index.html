@@ -18,8 +18,6 @@
   <meta name="keywords" content="" />
   <meta name="author" content="humans.txt">
 
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-
   <!-- Facebook Metadata /-->
   <meta property="fb:page_id" content="" />
   <meta property="og:image" content="" />
@@ -328,49 +326,6 @@
           </p>
           <hr/>
         </div>
-        <div data-target="tang-xiao">
-          <h2>Tang Xiao</h2>
-          <h4>First Class Problems</h4>
-          <p>
-            <strong>Context: </strong>
-            Using programming to generate possible graduation paths and module combinations.
-          </p>
-          <p>
-            <strong>Description: </strong>
-            Many of us probably want to graduate with a first class honour degree, which the criteria is with CAP >= 4.5 and at least A- in Honours thesis. We want to know what are all the possible grade combinations that will satisfy the first class honour degree criteria. Also consider that there are 3 SU options, one's MC can vary from 160 to 180, and FYP is 12 MC. 
-          </p>
-          <p>Naive solution will be enumerate all possibilities then remove inapporpriate ones. Better solution is to construct the problem to be a constraint satisfaction problem then use searching algorithm.
-          </p>
-          <p>
-            <strong>Learning Objectives: </strong>
-            Programming as a tool to do the brute force work for people.
-          </p>
-          <p>
-            <strong>Relevant CS topics/focus: </strong>
-            Constraint satisfation <br/>
-            Searching
-          </p>
-          
-          <h4>One-Child Policy</h4>
-          <p>
-            <strong>Context: </strong>
-            Using programming to perform mathematical modeling and simulation.
-          </p>
-          <p>
-            <strong>Description: </strong>
-             With the one child policy, how long it will take for the most populated country to become the least ? Assume half the current population of China(1.4 billion) are unmarried and able to have children. The ratio among unmarried of male to female is 121:100. When a couple get married, they will have child and it will be either a girl or a boy. If it's a girl, there is 0.01 chance that the couple will have a second baby. It takes 30 years for the new generation to grow up and get married. (other conditions can added to make it more complicated)
-          </p>
-          <p>
-            <strong>Learning Objectives: </strong>
-            Understand how programming can be used in mathematical contexts.
-          </p>
-          <p>
-            <strong>Relevant CS topics/focus:</strong>
-            Iteration<br/>
-            Recursion
-          </p>
-          <hr/>
-        </div>
         <div data-target="shao-hong">
           <h2>Shao Hong</h2>
           <h4>Flight Planning</h4>
@@ -381,18 +336,20 @@
           <p>
             <strong>Description: </strong>
             For this scenario, a list of starting, ending location and price will be given. For example (Singapore, Bali, 200), which means the flight from Singapore to Malaysia cost $200. Using this list, user will be able to find the cheapest flight and with as little "hop point" as possible given any two location. 
-            <pre>
-INPUT
+          </p>
+          <p><strong>Input</strong></p>
+<pre>
 Singapore, San Francisco
 Singapore, Sidney
 Lalaland, Singapore
+</pre>
 
-Output
+<p><strong>Output</strong></p>
+<pre>
 1200, Singapore > Taipei > San Francisco
 500, Singapore > Sidney
 Invalid input
-            </pre>
-          </p>
+</pre>
           <p>
             <strong>Learning Objectives: </strong>
             Optimizating based on given input.
@@ -413,18 +370,19 @@ Invalid input
           <p>
             <strong>Description:</strong>
             In this scenario, a list of common English words will be given and it will be loaded into memory. Next a list of Url and Hashtag will be feed into the program and the output will be split. The idea is taken from <a href="https://www.hackerrank.com/challenges/url-hashtag-segmentation" target="_blank">https://www.hackerrank.com/challenges/url-hashtag-segmentation</a> and maybe we can modify it to support some Singlish.
-            <pre>
-INPUT
+            <p><strong>Input</strong></p>
+<pre>
 3
 #googleglass
 #appleandorange
 www.ilovebanana.com
-
-OUTPUT
+</pre>
+            <p><strong>Output</strong></p>
+<pre>
 google glass
 apple and orange
 i love banana 
-            </pre>
+</pre>
           </p>
           <p>
             <strong>Learning Objectives:</strong>
@@ -441,6 +399,7 @@ i love banana
           <h4>Movie Marathon</h4>
           <p>
             <strong>Context: </strong>
+            <img src="http://1.bp.blogspot.com/_qyrDvBfmzZE/SmXdndtoXFI/AAAAAAAAB7I/BXRTK_R0pro/s400/1618_f260.jpg" class="inline" style="margin-top:0">
             In the United States, movie theatres work slightly differently. Your movie ticket doesn't contain a seat number, and this means that there are free seating in the movie theatre. In addition, after a movie has ended, there is no one to guide you to the exit. This means that after your movie has ended, you can *technically* slip into another movie theatre to watch another movie.
           </p>
           <p>
@@ -519,6 +478,49 @@ i love banana
             Graphs and Optimization
           </p>
 
+          <hr/>
+        </div>
+        <div data-target="tang-xiao">
+          <h2>Tang Xiao</h2>
+          <h4>First Class Problems</h4>
+          <p>
+            <strong>Context: </strong>
+            Using programming to generate possible graduation paths and module combinations.
+          </p>
+          <p>
+            <strong>Description: </strong>
+            Many of us probably want to graduate with a first class honour degree, which the criteria is with CAP >= 4.5 and at least A- in Honours thesis. We want to know what are all the possible grade combinations that will satisfy the first class honour degree criteria. Also consider that there are 3 SU options, one's MC can vary from 160 to 180, and FYP is 12 MC. 
+          </p>
+          <p>Naive solution will be enumerate all possibilities then remove inapporpriate ones. Better solution is to construct the problem to be a constraint satisfaction problem then use searching algorithm.
+          </p>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Programming as a tool to do the brute force work for people.
+          </p>
+          <p>
+            <strong>Relevant CS topics/focus: </strong>
+            Constraint satisfation <br/>
+            Searching
+          </p>
+          
+          <h4>One-Child Policy</h4>
+          <p>
+            <strong>Context: </strong>
+            Using programming to perform mathematical modeling and simulation.
+          </p>
+          <p>
+            <strong>Description: </strong>
+             With the one child policy, how long it will take for the most populated country to become the least ? Assume half the current population of China(1.4 billion) are unmarried and able to have children. The ratio among unmarried of male to female is 121:100. When a couple get married, they will have child and it will be either a girl or a boy. If it's a girl, there is 0.01 chance that the couple will have a second baby. It takes 30 years for the new generation to grow up and get married. (other conditions can added to make it more complicated)
+          </p>
+          <p>
+            <strong>Learning Objectives: </strong>
+            Understand how programming can be used in mathematical contexts.
+          </p>
+          <p>
+            <strong>Relevant CS topics/focus:</strong>
+            Iteration<br/>
+            Recursion
+          </p>
           <hr/>
         </div>
         <div data-target="xiangxin">
@@ -621,6 +623,7 @@ i love banana
             <strong>Description:</strong>
             Students will be tasked to implement a simplified version of <a href="http://edgerank.net/" target="_blank">Facebook's EdgeRank algorithm</a> which decides which stories appear in their newsfeed. 
           </p>
+          <img src="http://www.t2social.com/wp-content/uploads/2013/05/Facebook-EdgeRank-Formula.png"/>
           <p>
             The three ingredients of the EdgeRank algorithm:
             <ol class="bullet">
