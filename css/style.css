@@ -4,3 +4,4 @@ pre {font-family: 'courier', sans-serif; background-color:#eee; padding:20px;mar
 img {margin-top: 30px; margin-bottom: 30px;}
 img.inline {float: right; padding-left: 20px;}
 ul.block {background-color: #F5F7DC; padding: 20px; width: 300px; border-radius: 10px;}
+ul.bullet {list-style-type: initial; margin-left: 25px; margin-bottom: 20px;}
