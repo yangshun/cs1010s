@@ -1,4 +1,4 @@
-a, h2 a {color: rgb(0, 112, 150)}
+a, h2 {color: rgb(0, 112, 150)}
 a:hover h2 {color: #ccc;}
 h1 {border-bottom: 1px dotted #ccc; margin-bottom: 30px; }
 h4 {padding-top:30px; margin-bottom:10px; color: #09c; font-size: 28px; clear: both}
