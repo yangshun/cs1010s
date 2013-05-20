@@ -18,10 +18,10 @@ function changeNamesAndPictures() {
 	});
 	$('#scenarios').children('.tutor-section').each(function() {
 		var id = $(this).attr('data-target');
-		var $a = $('<a></a>').attr('href', FB_PROFILE_URL.replace('<id>', id)).attr('target', '_blank').html(getNameFromId(id));
-		$(this).children('h2').html($a);
-		var $img = $('<img/>').addClass('profile-pic').attr('src', FB_PROFILE_IMG_URL.replace('<id>', id));
-		$(this).prepend($img);
+		var $a = $(this).find('.tutor-profile-link');
+		$a.attr('href', FB_PROFILE_URL.replace('<id>', id));
+		$a.find('h2').text(getNameFromId(id));
+		var $img = $(this).find('img.profile-pic').attr('src', FB_PROFILE_IMG_URL.replace('<id>', id));
 	});
 }
 
