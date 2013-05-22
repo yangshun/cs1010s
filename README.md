@@ -1,5 +1,8 @@
-
-cs1010s-scenarios
+CS1010S
 =================
 
-Brainstorming for CS1010S question scenarios.
+Repository for content related to content creation in CS1010S.
+
+Contents:
+- Scenario folder
+  - Brainstorming of scenarios for problem sets/assignments done by CS1010S tutors
