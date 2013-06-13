@@ -9,11 +9,11 @@ This guide serves as an short guide for CS1010S tutors to get up and running wit
 
 **Note:** Optional step if you don't want to type in your password everytime you want to log in to the server. Can be skipped if you have already generated your ssh keys before. Do a simple check by entering the following command in your local machine.
 
-    local $ cd ~/.ssh
+    $ cd ~/.ssh
 
 If it shows "No such file or directory"
 
-    local $ ssh-keygen -t rsa
+    $ ssh-keygen -t rsa
 
 If you are prompted for a passphrase, just hit **Enter** or else you will have to key it in everytime u ssh.
 
@@ -21,11 +21,11 @@ If you are prompted for a passphrase, just hit **Enter** or else you will have t
 #### Step 1: Access the Server
 After your account has been created, try logging in to the server.
     
-    local $ ssh <username>@bleong.ddns.comp.nus.edu.sg
+    $ ssh <username>@bleong.ddns.comp.nus.edu.sg
 
 Change your password. Full reference [here](http://www.cyberciti.biz/faq/linux-set-change-password-how-to/):
 
-    remote $ passwd
+    $ passwd
   
 --  
 #### Step 2: Add your public key (Optional)
@@ -33,15 +33,15 @@ Change your password. Full reference [here](http://www.cyberciti.biz/faq/linux-s
 
 While still in the server, create the .ssh directory that will store public keys.
 
-    remote $ mkdir ~/.ssh
+    $ mkdir ~/.ssh
     
 Logout of the server with `logout` command. Now back in your local machine, copy the `id_rsa.pub` file into your home directory in the server.
 
-    local $ scp ~/.ssh/id_rsa.pub <user>@bleong.ddns.comp.nus.edu.sg:.ssh/authorized_keys
+    $ scp ~/.ssh/id_rsa.pub <user>@bleong.ddns.comp.nus.edu.sg:.ssh/authorized_keys
 
 Now verify that you can ssh into the server without having to key in your password.
 
-    local $ ssh <user>@bleong.ddns.comp.nus.edu.sg
+    $ ssh <user>@bleong.ddns.comp.nus.edu.sg
   
   
   
@@ -53,33 +53,47 @@ CVS (Concurrent Versions System) is a tool to record the history of source files
 
 Checking out a CVS repository is the equivalent of `git clone` in Git. Navigate to the directory that you would like to store the files of the remote repository and enter the following command:
 
-    local $ cvs -d :ext:<user>@bleong.ddns.comp.nus.edu.sg:/var/cvsroot/ checkout cs1010s-2013
+    $ cvs -d :ext:<user>@bleong.ddns.comp.nus.edu.sg:/var/cvsroot/ checkout cs1010s-2013
     
 --
-#### Step 2: Committing Files
+#### Step 2: File Management
 
-The term **Commit** in CVS has a different meaning than in Git. In CVS, a commit is the Git equivalent of a combination of `git commit` and `git push`. There are two common use-cases:
+The term **Commit** in CVS has a different meaning than in Git. For modified files in CVS, a commit is the Git equivalent of a combination of `git add`, `git commit` and `git push`. Tracking, staging and deploying occurs all in one step. There are two common use-cases:
 
 **1. Adding Newly-Created Files:**  
 Newly-created files have to be added before they can be committed.
 
-    local $ cvs add <file_name>
+    $ cvs add <file_name>
     # Output:
     # cvs add: scheduling file 'file_name' for addition
     # cvs add: use 'cvs commit' to add this file permanently
   
-Now CVS knows to keep track of this file. However, it will not show in the remote respository yet, they have to be committed first. The next step will cover instructions on how to update the remote repository about changes made to existing files.
+Now CVS knows to keep track of this file for version control. If the file contains binary data, specify the `-kb` flag. However, othe developers will not be able to see the file and it will not show in the remote respository, until have been committed. The next step will cover instructions on how to update the remote repository about changes made to existing files.
   
 **2. Updating Existing Files:**  
 When you have made modifications to existing files or simply want to update the remote repository about your newly-created files, use the `cvs commit` command along with a commit message.
 
-    local $ cvs commit -m "Your commit message here." <file_name>
+    $ cvs commit -m "Your commit message here." <file_name>
     
 You will see some output that indicates that the file has been update in the remote repository.  
 
 **Note:** If you try to commit newly-created files that havent been added using `cvs add`, there will be an error telling you: `cvs commit: use 'cvs add' to create an entry for 'file_name'`. Proceed to `cvs add` before trying `cvs commit` again.
 
-For easy adding and committing of files, you can use the `cvs add *` and `cvs commit *`, which will add/commit all the files in that directory. CVS will intelligently ignore the `CVS` folders that are used by the system itself. This may be abit slower but it is more convenient.
+**3. Removing Files:**  
+Like adding of files, after you delete a file, the `cvs remove` command has to be used to tell CVS that you really want to delete the file, followed by a `cvs commit` to remove the file from the repository.
+
+    $ rm <file_name>
+    $ cvs remove
+    # Output:
+    # cvs remove: Removing .
+    # cvs remove: scheduling <file_name> for removal
+    # cvs remove: use 'cvs commit' to remove these files permanently
+
+Finally, do a `cvs commit` to update the remote repository.
+
+    $ cvs commit -m 'Deleted a file'
+
+For easy adding, removing and committing of files, you can use the `cvs add *`, `cvs remove` and `cvs commit`, which will add/remove/commit the relevant files in that directory. CVS will intelligently ignore the `CVS` folders that are used by the system itself. This may be abit slower but it is more convenient.
 
 --
 #### Step 3: Updating the Repository
