@@ -54,7 +54,9 @@ CVS (Concurrent Versions System) is a tool to record the history of source files
 Checking out a CVS repository is the equivalent of `git clone` in Git. Navigate to the directory that you would like to store the files of the remote repository and enter the following command:
 
     $ cvs -d :ext:<user>@bleong.ddns.comp.nus.edu.sg:/var/cvsroot/ checkout cs1010s-2013
-    
+
+The location of the remote repository will be recorded in the `CVS/Root` file.
+
 --
 #### Step 2: File Management
 
