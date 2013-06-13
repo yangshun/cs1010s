@@ -23,7 +23,7 @@ After your account has been created, try logging in to the server.
     
     $ ssh <username>@bleong.ddns.comp.nus.edu.sg
 
-Change your password. Full reference [here](http://www.cyberciti.biz/faq/linux-set-change-password-how-to/):
+After logging in, change the password. Full reference [here](http://www.cyberciti.biz/faq/linux-set-change-password-how-to/):
 
     $ passwd
   
