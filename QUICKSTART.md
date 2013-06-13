@@ -11,11 +11,11 @@ This guide serves as an short guide for CS1010S tutors to get up and running wit
 
     $ cd ~/.ssh
 
-If it shows "No such file or directory"
+If it shows "No such file or directory", create the .ssh directory with this command:
 
     $ ssh-keygen -t rsa
 
-If you are prompted for a passphrase, just hit **Enter** or else you will have to key it in everytime u ssh.
+When prompted for a passphrase, just hit **Enter** or else you will have to key it in everytime u ssh.
 
 --
 #### Step 1: Accessing the Server
