@@ -47,7 +47,7 @@ Now verify that you can ssh into the server without having to key in your passwo
 
 ## CVS Guide (An Introduction)
 
-CVS (Concurrent Versions System) is a tool to record the history of source files and the documents in a directory. If you know Git, learning CVS will be easy. Since many people are familiar with Git, references to Git will be constantly made throughout this guide. For the full documentation, please 
+CVS (Concurrent Versions System) is a tool to record the history of source files and the documents in a directory. If you know Git, learning CVS will be easy. Since many people are familiar with Git, references to Git will be constantly made throughout this guide. For the full documentation, please refer to the [official CVS guide](http://ximbiot.com/cvs/manual/).
 
 #### Step 1: Checkout the Remote Repository
 
