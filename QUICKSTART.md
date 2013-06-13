@@ -69,7 +69,7 @@ Newly-created files have to be added before they can be committed.
     # cvs add: use 'cvs commit' to add this file permanently
   
 Now CVS knows to keep track of this file for version control. If the file contains binary data, specify the `-kb` flag. However, othe developers will not be able to see the file and it will not show in the remote respository, until have been committed. The next step will cover instructions on how to update the remote repository about changes made to existing files.
-  
+***
 **2. Updating Existing Files:**  
 When you have made modifications to existing files or simply want to update the remote repository about your newly-created files, use the `cvs commit` command along with a commit message.
 
@@ -78,7 +78,7 @@ When you have made modifications to existing files or simply want to update the 
 You will see some output that indicates that the file has been update in the remote repository.  
 
 **Note:** If you try to commit newly-created files that havent been added using `cvs add`, there will be an error telling you: `cvs commit: use 'cvs add' to create an entry for 'file_name'`. Proceed to `cvs add` before trying `cvs commit` again.
-
+***
 **3. Removing Files:**  
 Like adding of files, after you delete a file, the `cvs remove` command has to be used to tell CVS that you really want to delete the file, followed by a `cvs commit` to remove the file from the repository.
 
