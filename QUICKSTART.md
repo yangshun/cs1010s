@@ -18,7 +18,7 @@ If it shows "No such file or directory"
 If you are prompted for a passphrase, just hit **Enter** or else you will have to key it in everytime u ssh.
 
 --
-#### Step 1: Access the Server
+#### Step 1: Accessing the Server
 After your account has been created, try logging in to the server.
     
     $ ssh <username>@bleong.ddns.comp.nus.edu.sg
@@ -28,7 +28,7 @@ Change your password. Full reference [here](http://www.cyberciti.biz/faq/linux-s
     $ passwd
   
 --  
-#### Step 2: Add your public key (Optional)
+#### Step 2: Adding your Public Key (Optional)
 **Note:** This is optional if you did not perform step 0, skip to the next section on CVS.
 
 While still in the server, create the .ssh directory that will store public keys.
@@ -105,7 +105,7 @@ When others have made changes to the repository, you will need to run the `cvs u
 
 #### Bonus: CVS GUI Client
 
-In all these commands are too overwhelming, there's a CVS GUI Client called [SmartCVS](http://www.syntevo.com/smartcvs/) that provides a nice GUI interface to handle all these commands.
+If all these commands are too overwhelming, there's a CVS GUI Client called [SmartCVS](http://www.syntevo.com/smartcvs/) that provides a nice GUI interface to handle all these commands.
 
 ***
 
