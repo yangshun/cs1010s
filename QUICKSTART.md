@@ -1,7 +1,7 @@
 CS1010S Quickstart Guide
 ==
 
-This guide serves as an short guide for CS1010S tutors to get up and running with the remote cvs repository.
+This guide serves as an short guide for CS1010S tutors to get up and running with CVS and how to update the remote CVS repository.
 
 ## Server Admin
 
