@@ -70,14 +70,16 @@ Newly-created files have to be added before they can be committed.
     # cvs add: scheduling file 'file_name' for addition
     # cvs add: use 'cvs commit' to add this file permanently
   
-Now CVS knows to keep track of this file for version control. If the file contains binary data, specify the `-kb` flag. However, othe developers will not be able to see the file and it will not show in the remote respository, until have been committed. The next step will cover instructions on how to update the remote repository about changes made to existing files.  
+**Note:** If the file contains binary data, specify the `-kb` flag.  
+
+Now CVS knows to keep track of this file for version control. However, other developers will not be able to see the file and it will not show up in the remote respository, until the files have been committed. The next step will cover instructions on how to update the remote repository about changes made to existing files.  
   
 **2. Updating Existing Files:**  
 When you have made modifications to existing files or simply want to update the remote repository about your newly-created files, use the `cvs commit` command along with a commit message.
 
     $ cvs commit -m "Your commit message here." <file_name>
     
-You will see some output that indicates that the file has been update in the remote repository.  
+You will see some output that indicates that the file has been updated in the remote repository.  
 
 **Note:** If you try to commit newly-created files that havent been added using `cvs add`, there will be an error telling you: `cvs commit: use 'cvs add' to create an entry for 'file_name'`. Proceed to `cvs add` before trying `cvs commit` again.  
 
@@ -102,7 +104,6 @@ For easy adding, removing and committing of files, you can use the `cvs add *`, 
 
 When others have made changes to the repository, you will need to run the `cvs update` command to sync your local repository with the remote respository. This is similar to a `git pull`.
 
-
 ### Bonus: CVS GUI Client
 
 If all these commands are too overwhelming, save yourself all these pain and use a CVS GUI Client called [SmartCVS](http://www.syntevo.com/smartcvs/) that provides a nice GUI interface to handle all these commands.
@@ -111,6 +112,6 @@ If all these commands are too overwhelming, save yourself all these pain and use
 
 ## Endnotes
 
-This is only meant to be a simple guide meant to help you get started on the CS1010S work. There are tons of other things to learn about CVS which will not be covered here. Content written here is to the best of my knowledge. If you find any mistakes with the content please let me know.
+This simple guide is only meant to help you get started on the CS1010S work. There are tons of other things to learn about CVS which will not be covered here. Content written here is to the best of my *limited* knowledge. If you find any mistakes/inaccuracies with the content please let me know.
 
 Credits to [Soedar](https://github.com/soedar) for figuring out how to add the public key into the server. (:
