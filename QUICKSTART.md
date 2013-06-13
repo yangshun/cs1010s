@@ -70,12 +70,14 @@ Newly-created files have to be added before they can be committed.
   
 Now CVS knows to keep track of this file. However, it will not show in the remote respository yet, they have to be committed first. The next step will cover instructions on how to update the remote repository about changes made to existing files.
   
-**2. Updating Existing Files:**
+**2. Updating Existing Files:**  
 When you have made modifications to existing files or simply want to update the remote repository about your newly-created files, use the `cvs commit` command along with a commit message.
 
     local $ cvs commit -m "Your commit message here." <file_name>
     
-You will see some output that indicates that the file has been update in the remote repository. **Note:** If you try to commit newly-created files that havent been added using `cvs add`, there will be an error telling you: `cvs commit: use 'cvs add' to create an entry for 'file_name'`. Proceed to `cvs add` before trying `cvs commit` again.
+You will see some output that indicates that the file has been update in the remote repository.  
+
+**Note:** If you try to commit newly-created files that havent been added using `cvs add`, there will be an error telling you: `cvs commit: use 'cvs add' to create an entry for 'file_name'`. Proceed to `cvs add` before trying `cvs commit` again.
 
 For easy adding and committing of files, you can use the `cvs add *` and `cvs commit *`, which will add/commit all the files in that directory. CVS will intelligently ignore the `CVS` folders that are used by the system itself. This may be abit slower but it is more convenient.
 
@@ -91,6 +93,6 @@ In all these commands are too overwhelming, there's a CVS GUI Client called [Sma
 
 ## Endnotes
 
-This is a simple guide meant to help you get started on the CS1010S work. There are tons of other things to learn about CVS will not be covered here. Content written here is to the best of my knowledge. If you find any mistakes with the content please let me know.
+This is only meant to be a simple guide meant to help you get started on the CS1010S work. There are tons of other things to learn about CVS which will not be covered here. Content written here is to the best of my knowledge. If you find any mistakes with the content please let me know.
 
-Credits to [**Soedar**](https://github.com/soedar) for figuring out how to add the public key into the server. (:
+Credits to [Soedar](https://github.com/soedar) for figuring out how to add the public key into the server. (:
