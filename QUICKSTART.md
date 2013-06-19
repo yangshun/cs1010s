@@ -16,10 +16,10 @@ If it shows "No such file or directory", create the .ssh directory with this com
     $ ssh-keygen -t rsa
 
 When prompted for a passphrase, just hit **Enter** or else you will have to key
-it in everytime you ssh. You may do this if you're lazy but it's recommended to
-have a passphrase for you private key. If your private key is not encrypted,
+it in everytime you ssh. You may do this if you are lazy but it is recommended to
+have a passphrase for your private key. If your private key is not encrypted,
 anyone with access to your computer can take your private key and access your
-github repos, servers, etc. **YOU ARE WARNED**
+github repos, servers, etc. **YOU ARE WARNED.**
 
 --
 ### Step 1: Accessing the Server
@@ -118,4 +118,9 @@ If all these commands are too overwhelming, save yourself all these pain and use
 
 This simple guide is only meant to help you get started on the CS1010S work. There are tons of other things to learn about CVS which will not be covered here. Content written here is to the best of my *limited* knowledge. If you find any mistakes/inaccuracies with the content please let me know.
 
-Credits to [Soedar](https://github.com/soedar) for figuring out how to add the public key into the server. (:
+
+## Contributors
+
+[Tay Yang Shun](https://github.com/yangshun)
+[Soedar](https://github.com/soedar) for figuring out how to add the public key into the server. (:
+[Jason Yeo](https://github.com/jsyeo) for warning us about passphrase vulnerabilities
