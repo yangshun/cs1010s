@@ -19,7 +19,7 @@ When prompted for a passphrase, just hit **Enter** or else you will have to key
 it in everytime you ssh. You may do this if you are lazy but it is recommended to
 have a passphrase for your private key. If your private key is not encrypted,
 anyone with access to your computer can take your private key and access your
-github repos, servers, etc. **YOU ARE WARNED.**
+Github repos, servers, etc. **YOU HAVE BEEN WARNED.**
 
 --
 ### Step 1: Accessing the Server
