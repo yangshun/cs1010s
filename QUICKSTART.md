@@ -121,6 +121,6 @@ This simple guide is only meant to help you get started on the CS1010S work. The
 
 ## Contributors
 
-[Tay Yang Shun](https://github.com/yangshun)
-[Soedar](https://github.com/soedar) for figuring out how to add the public key into the server. (:
-[Jason Yeo](https://github.com/jsyeo) for warning us about passphrase vulnerabilities
+- Tay Yang Shun ([https://github.com/yangshun](https://github.com/yangshun))  
+- Soedar ([https://github.com/soedar](https://github.com/soedar)) for figuring out how to add the public key into the server. (:  
+- Jason Yeo ([https://github.com/jsyeo](https://github.com/jsyeo)) for warning us about passphrase vulnerabilities  
